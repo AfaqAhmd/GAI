@@ -20,6 +20,10 @@ p {
   box-sizing: border-box;
 }
 
+/* Mobile Header Styles */
+.mobile-header {
+  display: none; /* Hidden by default */
+}
 
 
 /* Desktop Header */
@@ -1525,37 +1529,4 @@ input[type="checkbox"] {
 }
 
 
-/* contact us page-------------------------- */
 
-.contact-main{
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-address {
-  width: 100%;
-}
-
-.contact-form{
-  width: 90%;
-  margin: auto;
-}
-
-.vl {
-  display: none;
-}
-
-/* faqs ------ */
-.faq-accordion {
-  width: 90%;
-  margin: auto;
-}
-.faq-title h2{
-  font-size: 2.5rem;
-}
-.faq-accordion h1 {
-  font-size: 1.5rem;
-  margin: 30px 0 0 ;
-}
-
-}

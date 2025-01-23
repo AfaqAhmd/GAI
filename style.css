@@ -9,12 +9,13 @@
 
 /* Apply Geometric to headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Geometric", sans-serif;
+  font-family: "Geometric ", sans-serif;
 }
 
 /* Apply Arial to paragraphs */
-p {
-  font-family: "Arial", sans-serif;
+p, ul {
+  font-family: "Geometric 415 Black BT", sans-serif;
+  font-size: 20px;
 }
 
 /* General reset */
@@ -245,6 +246,13 @@ nav a {
   padding: 4vw 0;
   height: auto;
 }
+.one-big-img-head img{
+
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
 .one-big-img-head h1{
   font-size: 3rem;
   color: var(--blue);
@@ -266,22 +274,26 @@ nav a {
 /* ----------*/
 
 .who-we-are{
-  /* width: 100%; */
-margin: auto;
-padding: 5vw 5vw;
-display: flex;
-justify-content: space-around;
-flex-direction: row;
-/* background-color: #d9d9d9; */
-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px;
+  background-color: #f5f5f5; /* Light background color for section */
+  margin-top: 40px;
+  line-height: 1.2;
+  color: var(--blue);
 }
 
-.who-left{
-  width: 40%;
+.who-left img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 30px;
 }
 
 .who-right{
-  width: 40%;
+  max-width: 600px;
   margin-top: 15vh;
 }
 .who-right h2{
@@ -310,11 +322,10 @@ color: var(--blue);
 /* ------- */
 
 .our-approach{
-  /* width: 100%; */
-  margin: auto;
-  /* padding: 5vw 5vw; */
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  /* padding: 20px; */
   color: white;
   background-image: url('./images/pattern.png');     /* Replace with your image URL */
   background-repeat: no-repeat;
@@ -324,9 +335,9 @@ color: var(--blue);
 }
 
 
-.our-approach div{
-  margin-top: 80px;
-  width: 40%;
+.approach-cont{
+  /* margin-top: 80px;   */
+  max-width: 600px;
 }
 .our-approach h2{
   font-size: 3.5rem;
@@ -343,9 +354,14 @@ color: var(--blue);
   line-height: 1.7;
   padding: 25px;
 }
-/* .our-approach img{
-float: inline-end;
-} */
+
+.approach-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 30px;
+}
 
 /* ------------- */
 
@@ -997,7 +1013,7 @@ input[type="checkbox"] {
 .who-wrapper {
   background-color: #B0D5F1; 
   display: flex;
-  justify-content: center;  
+  justify-content: space-between;  
   align-items: center;      
   padding: 20px;           
   gap: 20px;                
@@ -1031,6 +1047,7 @@ input[type="checkbox"] {
   line-height: 1.6;         
   color: #000000;              
   margin-bottom: 10px;
+  max-width: 300px;
 }
 
 
@@ -1066,12 +1083,13 @@ input[type="checkbox"] {
   margin-bottom: 20px;      
 }
 
-.mission-img p {
+.mission-titile p {
   font-size: 16px; 
   font-family: Arial, Helvetica, sans-serif;         
   line-height: 1.6;         
   color: #000000;              
   margin-bottom: 10px;
+  max-width: 300px;
 }
 
 .vision-wrapper {
@@ -1111,6 +1129,7 @@ input[type="checkbox"] {
   line-height: 1.6;         
   color: #000000;              
   margin-bottom: 10px;
+  max-width: 300px;
 }
 
 
@@ -1629,12 +1648,13 @@ input[type="checkbox"] {
 .donation-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 80px;
   background-color: #f5f5f5; /* Light background color for section */
   margin-top: 40px;
   border-radius: 10px;
   line-height: 1.2;
+  color: var(--blue);
 }
 
 .donation-image img {
@@ -1656,12 +1676,10 @@ input[type="checkbox"] {
   /* font-family: "Poppins-SemiBold", sans-serif; */
 }
 
-.donation-content p {
-  font-size: 1rem;
-  color: #555;
+.donation-content  ul {
+  /* font-size: 1rem; */
   line-height: 1.6;
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
 }
 
 .donate-button {

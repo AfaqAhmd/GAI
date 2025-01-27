@@ -39,7 +39,10 @@ p, ul {
   background-size: cover;
   position: relative;
 }
-
+.uper-sec-overlay{
+  height: 100%;
+  background-color: rgba(4 , 5, 6, 0.53); 
+}
 /* ------- */
 .cont-banner {
   padding: 2vw 15vw;
@@ -75,8 +78,8 @@ p, ul {
 
 /* Desktop Header */
 .header {
-  /* position: fixed; */
-  width: 80vw;
+  position:absolute;
+  width: 80%;
   margin: auto;
   /* top: 0; */
   /* left: 0; */
@@ -85,16 +88,17 @@ p, ul {
 }
 
 nav {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
   height: 75px;
-  background-image: linear-gradient(#00308f, #1584da);
+  /* background-image: linear-gradient(#00308f, #1584da);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 50px; */
 }
 
 .logo img {
@@ -120,18 +124,27 @@ nav a {
   font-family: "Arial", sans-serif;
 }
 
-.donate-button {
-  background-color: white;
-  color: #00308f;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-weight: bold;
+.donate-nav {
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(45deg, #00308F, #1584DA);
+    color: white;
+    border: none;
+    /* border-radius: 25px; */
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase; /* Convert text to uppercase */;
+    text-decoration: none;
+    border: 0.5px solid #00308F;
 }
 
-.donate-button:hover {
-  background-color: #00308f;
+.donate-nav:hover {
+  background-color: white;
   color: white;
   transition: 0.3s;
+  border: 0.5px solid white;
 }
 
 
@@ -223,10 +236,7 @@ nav a {
 
 /* ------ updersection header nav ---end ---- */
 
-.overlay{
-  height: 100%;
-  background-color: rgba(17, 84, 173, 0.5); 
-}
+
 /* ----- */
 .d-color{
   background-color: var(--blue);
@@ -545,7 +555,7 @@ nav a {
   background: linear-gradient(45deg, #00308F, #1584DA);
   color: white;
   border: none;
-  border-radius: 25px; /* Rounded corners */
+  border-radius: 25px;
   padding: 12px 25px;
   font-size: 16px;
   cursor: pointer;
@@ -810,7 +820,7 @@ nav a {
 
 
   .homedonation-form {
-    background-image: url('images/formbackground.png'); 
+    background-image: url('images/donate-from-bg.png'); 
     background-size: cover;
     background-position: center;
     padding: 50px 20px;
@@ -821,63 +831,68 @@ nav a {
 .content {
     max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.6); */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
+.content h2 {
     font-size: 2em;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-p {
+.content p {
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 20px;
 }
 
-.form {
+.content .form {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-select {
-    padding: 10px;
+.content select {
+    padding: 15px 25px;
     font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #333;
+    border: 1.5px solid white;
+    /* border-radius: 5px; */
+    /* background-color: #ffffff; */
+    color: white;
+    background: transparent;
+}
+.content select option{
+  color: black;
 }
 
+
 button {
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    border: 1.5px solid white;
+    /* border-radius: 5px; */
+    background-color: var(--blue);
     color: white;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
-button:hover {
+.content button:hover {
     background-color: #0056b3;
 }
 
-label {
-    font-size: 1em;
+.content label {
+    font-size: 1.2em;
     display: block;
     margin-top: 10px;
 }
 
-input[type="checkbox"] {
+.content input[type="checkbox"] {
     margin-right: 10px;
 }
 
@@ -1854,4 +1869,215 @@ input[type="checkbox"] {
 }
 
 
+/* --swiper slider-- */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ----project section home page------ */
+.project-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.project-cardd2 {
+  width: 50%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-cardd {
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  /* height: 200px;  */
+  overflow: hidden; /* Ensures that children do not overflow the container */
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container properly */
+}
+
+.project-image .overlayy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.project-image .overlayy span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.project-image .donate-buttonn {
+  background-color: #00308f;
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.project-image .donate-buttonn:hover {
+  background-color: #1584da;
+  transition: 0.3s;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  font-size: 18px;
+  color: #00308f;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+/* -------section doctors  home page----------- */
+
+.doctors{
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.doctors-content{
+  width: 45%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.doctors-content h2{
+  font-size: 4rem;
+}
+.statistics{
+  width: 45%;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-top: 30px;
+  background-color: rgba(224, 197, 197, 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stat2{
+  display: flex;
+  flex-direction: row;
+}
+
+.stat2 p 
+{
+  font-size: 4rem;
+}
+.stat2 .sp2{
+  padding-top: 10px;
+font-size: 2em;
+}
+.statistics .stat{
+  display: flex;
+  flex-direction: column;
+}
+.statistics .stat p
+{
+  font-size: 4rem;
+}
+.statistics .stat span
+{
+  font-size: 1.5rem;
+}
+
+/* ----  cont-text home page----- */
+.cont-text{
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  color: var(--blue);
+  line-height: 1.2;
+  text-align: center;
+}
+.cont-text h2{
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* --- text-card-section   home pae --- -- */
+
+.text-card-section{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 50px;
+  color: var(--blue);
+  background-image: url('./images/pattern.png');     /* Replace with your image URL */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--blue);
+}
+
+.text-card-sec{
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+.text-card-sec h3{
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+.text-card-sec p{
+  font-size: 18px;
+}

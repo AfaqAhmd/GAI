@@ -48,13 +48,13 @@ p, ul {
   padding: 2vw 15vw;
   color: white;
   width: 72vw;
-  margin-top: 25vh;
+  margin-top: 20vh;
   position: absolute;
   z-index: 1;
 }
 
 .cont-banner h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 .cont-banner p {
   font-size: 20px;
@@ -263,7 +263,7 @@ nav a {
 .one-big-img-head img{
 
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   height: auto;
 }
 
@@ -300,7 +300,7 @@ nav a {
 
 .who-left img{
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   height: auto;
   border-radius: 8px;
   margin-right: 30px;
@@ -372,7 +372,7 @@ nav a {
 
 .approach-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   height: auto;
   border-radius: 8px;
   margin-right: 30px;
@@ -441,8 +441,8 @@ nav a {
   display: flex;
   justify-content: center;
   gap: 70px;
-  flex-wrap: wrap;
-  padding: 3vw;
+  /* flex-wrap: wrap; */
+  padding: 3vw; 
 }
 
 /* News Card */
@@ -487,9 +487,9 @@ nav a {
 /* Text Overlay */
 .program-text {
   position: absolute;
-  bottom: 10px; /* Positioned text slightly above the bottom */
-  left: 10px;
-  right: 10px;
+  width: 97%;
+  bottom: 20px; /* Positioned text slightly above the bottom */
+  left: 13px;
   color: white;
   font-size: 20px;
   text-align: center;
@@ -497,12 +497,12 @@ nav a {
   padding: 5px;
   background: none; /* Removed background color */
   z-index: 2; /* Ensure text appears above the overlay */
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.program-card:hover {
+/* .program-card:hover {
   transform: scale(1.05);
-}
+} */
 
 
 
@@ -1872,16 +1872,20 @@ button {
   padding: 20px;
   justify-content: center;
 }
-.project-cardd2 {
-  width: 50%;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.project-head{
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent;
+    color: var(--blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    align-items: center;
 }
-
 .project-cardd {
-  width: 30%;
+  width: 50%;
   background: white;
   border-radius: 10px;
   overflow: hidden;
@@ -1891,47 +1895,57 @@ button {
 .project-image {
   position: relative;
   width: 100%;
-  /* height: 200px;  */
-  overflow: hidden; /* Ensures that children do not overflow the container */
+  /* height: 200px; */
+  overflow: hidden;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container properly */
+  object-fit: cover;
+
 }
 
-.project-image .overlayy {
+.project-image .projct-text {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 30px;
+  left: 30px;
   right: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  /* background: rgba(0, 0, 0, 0.6); */
   color: white;
   padding: 10px;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
   box-sizing: border-box;
 }
 
-.project-image .overlayy span {
+.project-image .projct-text span {
+  /* font-size: 14px;
+  font-weight: 400; */
+
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.project-image .donate-buttonn {
+.project-image .donate-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   background-color: #00308f;
   color: white;
   text-decoration: none;
   padding: 5px 15px;
   font-weight: bold;
   font-size: 14px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
-.project-image .donate-buttonn:hover {
+.project-image .donate-btn:hover {
   background-color: #1584da;
   transition: 0.3s;
 }
@@ -1941,15 +1955,15 @@ button {
 }
 
 .project-content h3 {
-  font-size: 18px;
+  font-size: 22px;
   color: #00308f;
   margin-bottom: 10px;
 }
 
 .project-content p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #555;
+  /* color: #555; */
 }
 
 
@@ -2022,54 +2036,107 @@ button {
 
 /* --- text-card-section   home pae --- -- */
 
-.text-card-section{
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  padding: 50px;
-  color: var(--blue);
-  background-image: url('./images/pattern.png');     /* Replace with your image URL */
-  background-repeat: no-repeat;
+.text-card-section {
+  background: #00308F url("images/pattern.png"); /* Blue color + Background image */
   background-size: cover;
-  background-color: var(--blue);
-}
-
-.text-card-sec{
-  max-width: 400px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 15px;
-  margin-left: 50px;
-}
-.text-card-sec h3{
-  margin-top: 15px;
-  font-size: 1.4rem;
-}
-.text-card-sec p{
-  font-size: 18px;
-}
-
-
-/* ------ */
-
-.swiper2 {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide2 {
-  text-align: center;
-  font-size: 18px;
-  /* background: #fff; */
+  background-position: center;
+  background-repeat: repeat;
+  padding: 50px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 20px ;
+  min-height: 100vh; /* Ensure full height */
+  position: relative; /* Ensure arrows stay inside */
+}
+/* --- Swiper Styling --- */
+.textCardSwiper {
+  width: 85%;
+  height: 100%;
+  padding: 20px 0;
+  background: transparent !important; /* Ensure no unwanted background */
+  position: relative; /* Ensure arrows are inside */
 }
 
-.swiper-slide2 img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* --- Swiper Slide Settings --- */
+.swiper-slide2 {
+  /* text-align: center;  */
+  border-radius: 20px;  
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* --- Text Card Styling --- */
+.text-card-sec {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for better visibility */
+  text-align: center;
+  width: 100%;
+  /* max-width: 400px; Slightly wider cards */
+  transition: transform 0.3s ease-in-out;
+}
+/* --- Hover Effect on Cards --- */
+.text-card-sec:hover {
+  /* transform: translateY(-10px);  */
+}
+/* --- Image inside Card --- */
+.text-card-sec img {
+  width: 100%;
+  height: auto;
+  /* max-width: 270px; */
+  border-radius: 10px; /* Slight rounding on images */
+  margin-bottom: 15px;
+}
+/* --- Card Heading --- */
+.text-card-sec h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #00308F; /* Blue heading */
+}
+/* --- Card Text --- */
+.text-card-sec p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+/* --- Swiper Navigation Arrows (Fix for Not Showing) --- */
+.textCardSwiper .swiper-button-next,
+.textCardSwiper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9); /* Light background for visibility */
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999 !important; /* Ensure arrows are on top */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+/* --- Left Arrow (Previous) --- */
+.textCardSwiper .swiper-button-prev {
+  left: -90px; /* Move further outside */
+}
+/* --- Right Arrow (Next) --- */
+.textCardSwiper .swiper-button-next {
+  right: -90px; /* Move further outside */
+}
+/* --- Icon Size Increase --- */
+.textCardSwiper .swiper-button-next::after,
+.textCardSwiper .swiper-button-prev::after {
+  font-size: 24px;
+  color: #00308F; /* Blue color */
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+

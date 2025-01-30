@@ -1682,3 +1682,7 @@ margin-top: 20px;
   font-size: 3.5rem;
   color: var(--blue);
 }
+
+.region-text p{
+  font-size: 20px;
+}

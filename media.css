@@ -434,7 +434,9 @@ margin-top: 20px;
   font-size: 2rem;
   color: var(--blue);
 }
-
+.region-text p{
+  font-size: 16px;
+}
 
   }
 

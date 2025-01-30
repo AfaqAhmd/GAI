@@ -709,7 +709,7 @@ button {
   text-align: center;
   z-index: 2; 
   width: fit-content;
-  background:rgba(25, 45, 228, 1);
+  background:rgb(16, 24, 97);
   font-size: 25px;
   font-weight: 600;
   color: #ffffff;
@@ -1665,4 +1665,20 @@ donation
 
 .donation-type label {
   margin-right: 10px;
+}
+
+
+/* ------ */
+.region{
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+.region-text{
+margin-top: 20px;
+
+}
+.region-text h2{
+  font-size: 3.5rem;
+  color: var(--blue);
 }

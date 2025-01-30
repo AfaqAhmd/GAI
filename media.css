@@ -81,8 +81,9 @@
 }
     
    /* ----project section home page------ */
-   .project-head{
-    font-size: 40px;
+   
+  .project-head h2{
+    font-size: 2rem;
   }
 .project-section {
   width: 100%;
@@ -93,6 +94,17 @@
   padding: 20px;
   justify-content: center;
 }
+.project-section2 {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  /* justify-content: center; */
+}
 .project-cardd {
   width: 100%;
   background: white;
@@ -100,6 +112,43 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.project-cardd2 {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --------app process---- */
+.app-process{
+  /* width: 80%; */
+  padding: 10vw 10vw;
+  background: var(--blue);
+  margin: auto;
+}
+
+.app-process-head h2{
+  font-size: 2rem;
+}
+.app-process-container{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+.app-process-card{
+  width: 100%;
+  padding: 40px;
+  background: white;
+  color: var(--blue);
+  border-radius: 20px;;
+}
+
+
 
 /* -------section doctors  home page----------- */
 
@@ -223,7 +272,12 @@ display: none;
   font-size: 1em;
 }
 
-
+/* footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 /* Footer Bottom */
 .footer-bottom {

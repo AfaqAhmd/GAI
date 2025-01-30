@@ -209,8 +209,6 @@ display: none;
 }
 
 
-
-
  /* --------  homedonation-form ---------- */
 
  .content .form {
@@ -246,12 +244,42 @@ display: none;
   padding:0;
 }
 
+/* --------gift and donate page---------- */
 
+.donationsecond-main {
+  padding-top: 50px;
+}
+.donationsecond-title {
+  font-size: 30px;
+}
 
+.donationsecond {
+  flex-direction: column;
+  width: 100%;
+}
 
-
-
-
+.donationsecond-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%;
+}
+.donationsecond-overlay-text {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  text-align: center;
+  z-index: 2; 
+  width: fit-content;
+  background:rgba(25, 45, 228, 1);
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  border: 2px solid white;
+  border-radius: 10px;
+}
 
 
 

@@ -63,15 +63,6 @@ p, ul {
   z-index: 1;
 }
 
-.cont-banner2 h1 {
-  font-size: 4rem;
-}
-.cont-banner2 p {
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 400;
-  padding-top: 20px;
-}
 /* ---------------- */
 .cont-banner {
   padding: 2vw 15vw;

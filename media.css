@@ -169,6 +169,7 @@
 }
 .doctors-content h2{
   font-size: 2rem;
+  padding-bottom: 15px;
 }
 .statistics{
   width: 90%;
@@ -496,6 +497,7 @@ display: none;
 
     .doctors-content h2{
       font-size: 3rem;
+      padding-bottom: 15px;
     }
         
     .stat2 p 

@@ -6,6 +6,9 @@
   --blue: #00308f;
 }
 
+html, body{
+  overflow: hidden;
+}
 
 /* Apply Geometric to headings */
 h1, h2, h3, h4, h5, h6 {

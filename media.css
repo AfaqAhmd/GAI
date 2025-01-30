@@ -57,24 +57,6 @@
 .upper-section2 {
   height: 40vh;
 }
-.cont-banner2 {
-  padding: 2vw 15vw;
-  color: white;
-  width: 85vw;
-  margin-top: 20vh;
-  position: absolute;
-  z-index: 1;
-}
-
-.cont-banner2 h1 {
-  font-size: 4rem;
-}
-.cont-banner2 p {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400;
-  padding-top: 20px;
-}
 
 /* ---- */
 .upper-section {

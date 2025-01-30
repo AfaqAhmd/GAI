@@ -266,7 +266,7 @@ display: none;
 }
 .donationsecond-overlay-text {
   position: absolute;
-  bottom: 100px;
+  bottom: 90px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 15px;

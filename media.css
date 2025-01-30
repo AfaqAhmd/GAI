@@ -209,12 +209,12 @@ display: none;
  .content .form {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 20px;
 }
 
 .content select {
-  padding: 8px 15px;
+  padding: 8px 12px;
   font-size: 1em;
 }
 

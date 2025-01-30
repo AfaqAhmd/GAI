@@ -220,7 +220,23 @@ display: none;
 
 
 
+/* Footer Bottom */
+.footer-bottom {
+  width: 90%;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.footer-bottom img {
+  width: 150px; 
+  margin-bottom: 15px;
+}
+.footer-bottom p {
+  font-size: 12px;
+  padding: 0 10px;
+}
 
 
 

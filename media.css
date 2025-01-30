@@ -73,8 +73,53 @@
   padding-top: 20px;
 }
     
-   
-  
+   /* ----project section home page------ */
+   .project-head{
+    font-size: 40px;
+  }
+.project-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.project-cardd {
+  width: 90%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+
+/* -----donation page--- */
+.donation-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.donation-image img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+.donation-content {
+  margin-left: 0;
+}
+
+.donation-amounts {
+  justify-content: center;
+}
+
+.donation-input {
+  flex-direction: column;
+  align-items: center;
+}
   }
 
 

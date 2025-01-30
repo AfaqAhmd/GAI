@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation</title>
+    <title>Gift-Donaton</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -15,24 +15,19 @@
 
 <body>
   <header class="header">
-    <nav>
+    <nav class="nav-blue">
       <div class="logo">
         <a href="index.html">
-          <img src="images/Logo.png" alt="Global Aid International" />
+          <img src="images/footerlogo.png" alt="Global Aid International" />
         </a>
       </div>
       <ul>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="gift-donate.html">Gift & Donate</a></li>
-         <li><a href="Campaigns.html">Campaigns</a></li> 
+         <li><a href="gift-donate.html">Gift & Donate</a></li>
+         <li><a href="#">Regions</a></li> 
         <li><a href="project.html">Projects</a></li>
-        <!-- <li><a href="volunteer.html">Volunteer</a></li> -->
-        <!-- <li><a href="faqs.html">Faqs</a></li> -->
-        <!-- <li><a href="contact.html">Contact Us</a></li> -->
         <li>
-          <a href="donation.html" class="donateicon-button"
-            ><i class="fas fa-donate"></i> Donate</a
-          >
+          <a href="donation.html" class="donate-nav">Donate</a>
         </li>
       </ul>
     </nav>
@@ -54,155 +49,212 @@
     <div class="mobile-menu" id="mobile-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="project2.html">Projects</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="faqs.html">Faqs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+         <li><a href="gift-donate.html">Gift & Donate</a></li>
+         <li><a href="#">Regions</a></li> 
+        <li><a href="project.html">Projects</a></li>
         <li><a href="donation.html">Donate</a></li>
-        <li><a href="donation.html" class="donate-button">Donate</a></li>
       </ul>
     </div>
   </header>
   <script src="toggle.js" defer></script>
 
 
-<!-- ------------ -->
-
-    <section class="gift-wrapper">
-      <h2 class="gift-title">Empower a Student Today</h2>
-    </section>  
-
 <!-- ------------------ -->
 
-
-    <section class="donation-section">
-        <div class="donation-image">
-            <img src="images/donate.png" alt="">
-        </div>
-        <div class="donation-content">
-            <h2>Why Donate to GAI?</h2>
-            <ul>
-            <li>Your contribution directly impacts students by funding their education and providing financial stability.</li>
-            <li>Every donation, big or small, creates lasting change.</li>
-            </ul>
-<!-- 
-                <button class="donateicon-button">
-                    Donate Now <span class="icon"> <img src="images/buttonicon.png" alt=""></span>
-                  </button> -->
-        </div>
-    </section>
-
-      <!-- -------------- -->
-
-      <section class="our-approach">
-        <div class="approach-cont">
-          <h2>
-            Ways to Donate:
-          </h2>
-          <ul>
-            <li>One-time or recurring gifts.</li>
-            <li>Corporate partnerships and sponsorships.</li>
-          </ul>
-        </div>
-        
-        <div>
-        <img src="images/why-donate.png" alt="" />
-        </div>
-      </section>
-
-      <!-- ------------------ -->
-
-
-    <section class="donation-section">
-      <div class="donation-image">
-          <img src="images/make-diffence.png" alt="">
+<section class="donation-box">
+  <div class="donation-container">
+    <div class="donation-image">
+      <img src="images/donation01.png" alt="">
+    </div>
+    <div class="donation-content">
+      <h2>Interest-Free Loans</h2>
+      <p>Select Donation Amount</p>
+      <div class="donation-amounts">
+        <button class="donation-btn">100 Pkr</button>
+        <button class="donation-btn">200 Pkr</button>
+        <button class="donation-btn">300 Pkr</button>
+        <button class="donation-btn">Other</button>
       </div>
-      <div class="donation-content">
-          <h2>Make a Difference Today!</h2>
-          <ul>
-          <li>Your generosity can change lives. With every donation, you help us provide education, healthcare, and essential
-             support to vulnerable communities. No amount is too small; every contribution counts and creates a lasting impact.</li>
-          <li>Join us in our mission to empower and uplift others. Together, we can transform lives, one act of kindness at a time.</li>
-          </ul>
-
+      <p>Or Enter Donation Amount</p>
+      <div class="donation-input">
+        <input type="number" placeholder="100"> Pkr
+        <button class="add-to-box">Add to Box</button>
       </div>
-  </section>
+      <div class="donation-type">
+        <label><input type="radio" name="donation-type"> One Time Donation</label>
+        <label><input type="radio" name="donation-type"> Regular Monthly Donation</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="donation-container">
+    <div class="donation-image">
+      <img src="images/donation02.png" alt="">
+    </div>
+    <div class="donation-content">
+      <h2>Scholarship Programs Donation</h2>
+      <p>Select Donation Amount</p>
+      <div class="donation-amounts">
+        <button class="donation-btn">100 Pkr</button>
+        <button class="donation-btn">200 Pkr</button>
+        <button class="donation-btn">300 Pkr</button>
+        <button class="donation-btn">Other</button>
+      </div>
+      <p>Or Enter Donation Amount</p>
+      <div class="donation-input">
+        <input type="number" placeholder="100"> Pkr
+        <button class="add-to-box">Add to Box</button>
+      </div>
+      <div class="donation-type">
+        <label><input type="radio" name="donation-type"> One Time Donation</label>
+        <label><input type="radio" name="donation-type"> Regular Monthly Donation</label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="donation-container">
+    <div class="donation-image">
+      <img src="images/donation03.png" alt="">
+    </div>
+    <div class="donation-content">
+      <h2>Disaster Relief teams Funding</h2>
+      <p>Select Donation Amount</p>
+      <div class="donation-amounts">
+        <button class="donation-btn">100 Pkr</button>
+        <button class="donation-btn">200 Pkr</button>
+        <button class="donation-btn">300 Pkr</button>
+        <button class="donation-btn">Other</button>
+      </div>
+      <p>Or Enter Donation Amount</p>
+      <div class="donation-input">
+        <input type="number" placeholder="100"> Pkr
+        <button class="add-to-box">Add to Box</button>
+      </div>
+      <div class="donation-type">
+        <label><input type="radio" name="donation-type"> One Time Donation</label>
+        <label><input type="radio" name="donation-type"> Regular Monthly Donation</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="donation-container">
+    <div class="donation-image">
+      <img src="images/donation04.png" alt="">
+    </div>
+    <div class="donation-content">
+      <h2>Healthcare Programs Donation</h2>
+      <p>Select Donation Amount</p>
+      <div class="donation-amounts">
+        <button class="donation-btn">100 Pkr</button>
+        <button class="donation-btn">200 Pkr</button>
+        <button class="donation-btn">300 Pkr</button>
+        <button class="donation-btn">Other</button>
+      </div>
+      <p>Or Enter Donation Amount</p>
+      <div class="donation-input">
+        <input type="number" placeholder="100"> Pkr
+        <button class="add-to-box">Add to Box</button>
+      </div>
+      <div class="donation-type">
+        <label><input type="radio" name="donation-type"> One Time Donation</label>
+        <label><input type="radio" name="donation-type"> Regular Monthly Donation</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="donation-container">
+    <div class="donation-image">
+      <img src="images/donation05.png" alt="">
+    </div>
+    <div class="donation-content">
+      <h2>Food Relief Program Donation</h2>
+      <p>Select Donation Amount</p>
+      <div class="donation-amounts">
+        <button class="donation-btn">100 Pkr</button>
+        <button class="donation-btn">200 Pkr</button>
+        <button class="donation-btn">300 Pkr</button>
+        <button class="donation-btn">Other</button>
+      </div>
+      <p>Or Enter Donation Amount</p>
+      <div class="donation-input">
+        <input type="number" placeholder="100"> Pkr
+        <button class="add-to-box">Add to Box</button>
+      </div>
+      <div class="donation-type">
+        <label><input type="radio" name="donation-type"> One Time Donation</label>
+        <label><input type="radio" name="donation-type"> Regular Monthly Donation</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="donation-container">
+    <div class="donation-image">
+      <img src="images/donation06.png" alt="">
+    </div>
+    <div class="donation-content">
+      <h2>Volunteer Funds</h2>
+      <p>Select Donation Amount</p>
+      <div class="donation-amounts">
+        <button class="donation-btn">100 Pkr</button>
+        <button class="donation-btn">200 Pkr</button>
+        <button class="donation-btn">300 Pkr</button>
+        <button class="donation-btn">Other</button>
+      </div>
+      <p>Or Enter Donation Amount</p>
+      <div class="donation-input">
+        <input type="number" placeholder="100"> Pkr
+        <button class="add-to-box">Add to Box</button>
+      </div>
+      <div class="donation-type">
+        <label><input type="radio" name="donation-type"> One Time Donation</label>
+        <label><input type="radio" name="donation-type"> Regular Monthly Donation</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="donation-container">
+    <div class="donation-image">
+      <img src="images/donation07.png" alt="">
+    </div>
+    <div class="donation-content">
+      <h2>Gifts & Donation</h2>
+      <p>Select Donation Amount</p>
+      <div class="donation-amounts">
+        <button class="donation-btn">100 Pkr</button>
+        <button class="donation-btn">200 Pkr</button>
+        <button class="donation-btn">300 Pkr</button>
+        <button class="donation-btn">Other</button>
+      </div>
+      <p>Or Enter Donation Amount</p>
+      <div class="donation-input">
+        <input type="number" placeholder="100"> Pkr
+        <button class="add-to-box">Add to Box</button>
+      </div>
+      <div class="donation-type">
+        <label><input type="radio" name="donation-type"> One Time Donation</label>
+        <label><input type="radio" name="donation-type"> Regular Monthly Donation</label>
+      </div>
+    </div>
+  </div>
+</section>
+   
+
+
+
 
   <!-- --------------------- -->
-  <section class="who-wrapper">
-    <div class="whoare-img">
-      <img src="images/about1.png" alt="who are we image">
-    </div>
-
-    <div class="whoarewe-title">
-      <h2>Application Process</h2>
-      <p>Learn more about eligibility criteria and how to apply for our scholarships.</p>
-    </div>
       
-  </section>
-
-  <section class="who-wrapper">
-    <div class="whoarewe-title">
-      <h2>Application Process</h2>
-      <p>Learn more about eligibility criteria and how to apply for our scholarships.</p>
-    </div>
-      
-    <div class="whoare-img">
-      <img src="images/about2.png" alt="who are we image">
-    </div>
-  </section>
-
-  <section class="who-wrapper">
-    <div class="whoare-img">
-      <img src="images/about3.png" alt="who are we image">
-    </div>
-    <div class="whoarewe-title">
-      <h2>Application Process</h2>
-      <p>Learn more about eligibility criteria and how to apply for our scholarships.</p>
-      
-    </div>
-  </section>
-  
-  <!-- <section class="mission-wrapper">
-    <div class="mission-titile">
-      <h2>Scholarship Benefits</h2>
-      <p>Gain insights into the support we provide, from tuition coverage to academic mentoring.
-      </p>
-    </div>
-    <div class="mission-img">
-      <img src="images/about2.png" alt="">
-    </div>
-  </section>
-  
-  
-  <section class="vision-wrapper">
-    <div class="vision-img">
-      <img src="images/about3.png" alt="who are we image">
-    </div>
-    <div class="vision-title">
-      <h2>Success Stories</h2>
-      <p>Discover inspiring journeys of past scholarship recipients who are now making a difference worldwide.</p>
-    </div>
-  </section> -->
-
-
-
-
-    <!-- --------------------- -->
-
-
-
-    <section class="homedonation-form">
+     <section class="homedonation-form">
       <div class="content">
-        <h1>PERSON'S LIFE<br />YOU CAN CHANGE NOW</h1>
+        <h2>Change a Life Today – The Power Is in Your Hands</h2>
         <p>
-          Every passing minute is very important.<br />
-          The support you give now will change the<br />
-          life of a mother, a child or a person. Join<br />
-          the good movement.
+          Every second counts. Your support can transform the life of a child, 
+          a parent, or an entire family. With your generosity, we provide education, healthcare, 
+          and hope to those who need it most. Become part of a movement that doesn’t just help but changes lives forever.
         </p>
         <div class="form">
-          <select class="one">
+          <select>
             <option>Select</option>
             <option>Option 1</option>
             <option>Option 2</option>
@@ -222,13 +274,10 @@
         </label>
       </div>
     </section>
-
-    <!-- ------------- -->
-
-
+    
     <footer class="footer">
       <div class="footer-container">
-
+    
         <!-- Section 1: Contact -->
         <div class="footer-column">
           <h3>Contact Us</h3>
@@ -236,17 +285,17 @@
             Let’s Connect Have questions about our programs or application process?
              Reach out to us, and we’ll be happy to assist.
           </p>
-
+    
           <p>
             Email:
             <a href="mailto:support@gai.org"
               >support@gai.org</a
             >
           </p>
-
+    
           <p>Phone: <a href="tel:+1-800-555-EDUCATE">+1-800-555-EDUCATE</a></p>
           <p>Address: 123 Scholarship Lane, Knowledge City, EduNation</p>
-
+    
           <div class="social-icons">
             <a
               href="https://www.facebook.com/people/Global-Aid-International-Foundation/100082018467836/"
@@ -258,7 +307,7 @@
             <a href="#"><i class="fab fa-pinterest"></i></a>
           </div>
         </div>
-
+    
         <!-- Section 2: About Us -->
         <div class="footer-column">
           <h3>About Us</h3>
@@ -273,27 +322,38 @@
             <li><a href="#">Communication</a></li>
           </ul>
         </div>
-
+    
         
         <!-- Section 3: Projects -->
         <div class="footer-column">
           <h3>Projects</h3>
           <ul>
-            <li><a href="#">Long live mothers, long live children</a></li>
-            <li><a href="#">Right of Eye</a></li>
-            <li><a href="#">The Earth is Full of Pain. Hungry for Your Goodness!</a></li>
-            <li><a href="#">Water for US. Life of Them!</a></li>
-            <li><a href="#">Zakat for life!</a></li>
+            <li><a href="#">Interest-Free Loans</a></li>
+            <li><a href="#">Scholarship Programs</a></li>
+            <li><a href="#">Disaster Relief teams</a></li>
+            <li><a href="#">Healthcare Programs</a></li>
+            <li><a href="#">Where we work</a></li>
             <li><a href="#">Regular Donation</a></li>
-            <li><a href="#">Gaza Crisis</a></li>
-            <li><a href="#">Other Crisis Emergencies</a></li>
+            <li><a href="#">Food Initiative Programs</a></li>
+            <li><a href="#">Volunteer Teams</a></li>
             
           </ul>
         </div>
-
-
+    
+    
+    
+    
       </div>
     </footer>
+    
+    <div class="footer-bottom">
+      <img src="images/footerlogo.png">
+       <p>Global Aid International operates with full authorization to conduct donation and fundraising activities in compliance with applicable regulations.
+          Our organization is committed to transparency and accountability, with all activities overseen by the appropriate regulatory bodies.
+           Through ethical fundraising practices, GAI continues to empower underserved communities globally by providing access to interest-free loans,
+            scholarships, and essential humanitarian aid.</p>
+     </div>
+
 
 
 </body>

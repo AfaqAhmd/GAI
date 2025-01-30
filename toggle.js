@@ -12,9 +12,3 @@ menuToggle.addEventListener("click", function () {
   menuToggle.classList.toggle("open");
   console.log("Menu icon class list:", menuToggle.classList); // Logs current classes on menu icon
 });
-
-const swiper = new Swiper('.swiper-slide', {
-  autoplay: {
-    delay: 5000,
-  },
-});

@@ -270,6 +270,31 @@ display: none;
   
 }
 
+/* ------ about page---- ///////*/
+
+/* ------ one big img---- */
+
+.one-big-img{
+  margin: auto;
+  width: 95%;
+  text-align: center;
+  color: var(--blue);
+}
+.one-big-img-head h1{
+  font-size: 2rem;
+}
+
+/* -------our approach------ */
+
+
+.our-approach{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+/* ------------------ */
 
 
 

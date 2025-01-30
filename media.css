@@ -284,7 +284,7 @@ display: none;
   font-size: 2rem;
 }
 
-/* -------our approach------ */
+/* -------our approach   about page------ */
 
 
 .our-approach{
@@ -294,7 +294,27 @@ display: none;
   
 }
 
-/* ------------------ */
+/* -------programs   about page----------- */
+.program-title {
+  font-size: 30px;
+}
+.programs{
+  margin: auto;
+  padding-bottom: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-size: cover;
+  text-align: center;
+}
+.program-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 35px;
+}
+
 
 
 

@@ -164,7 +164,7 @@ display: none;
 .who-we-are{
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-around;
   padding: 20px;
   background-color: #f5f5f5; /* Light background color for section */

@@ -212,10 +212,9 @@
 
 /* ----------text-card-section---- */
 
-.text-card-section {
- flex-direction: column;
+.text-card-sec {
+  height: 620px;
 }
-
 
 /* ----who we are------*/
 

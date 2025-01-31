@@ -441,6 +441,10 @@
             empowering them to unlock their potential and achieve their dreams.
           </li>
         </ul>
+        <div class="cont-links">
+          <a href="donation.html" class="donateicon-button"
+          > Learn More</a>
+        </div>
       </div>
     </section>
 
@@ -581,11 +585,45 @@
         },
       });
     </script>
-
-
- 
+  
 
  <script>
+ var swiper2 = new Swiper(".textCardSwiper", {
+   spaceBetween: 25, 
+   loop: false, /* Avoid loop issues */
+   centeredSlides: false, /* Ensures proper positioning */
+   autoplay: {
+     delay: 3000, /* 3 seconds */
+     disableOnInteraction: false,
+   },
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   speed: 700, /* Smooth transition */
+   slidesPerGroup: 1,
+   breakpoints: {
+     1024: {
+       slidesPerView: 3,
+     },
+     768: {
+       slidesPerView: 1,
+       centeredSlides: true,
+     },
+     576: {
+       slidesPerView: 1,
+       centeredSlides: true,
+     }
+   }
+});
+
+ </script>
+
+ <!-- <script>
 document.addEventListener("DOMContentLoaded", function () {
   let textSwiper = document.querySelector(".textCardSwiper");
 
@@ -594,6 +632,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesPerView: 3,
       spaceBetween: 25,
       loop: false,
+      centeredSlides: true,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -613,7 +652,10 @@ document.addEventListener("DOMContentLoaded", function () {
     console.warn("Swiper container (.textCardSwiper) not found!");
   }
 });
-</script>
+</script> -->
+
+
+
 
   </body>
 </html>

@@ -1388,8 +1388,18 @@ button {
 
 /* --- text-card-section   home page --- -- */
 
-.textCardSwiper .swiper-slide {
-  width: 100% !important; /* Forces only 1 slide at a time */
+.text-card-section {
+  background: #00308F;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  position: relative; 
+  gap: 20px;
 }
 
 /* --- Swiper Container --- */
@@ -1398,6 +1408,7 @@ button {
   padding: 20px 0;
   background: transparent !important;
   position: relative;
+  
 }
 
 /* --- Swiper Slide --- */
@@ -1413,7 +1424,9 @@ button {
   max-width: 400px;
   transition: transform 0.3s ease-in-out;
   margin: auto;
+  height: 600px;
 }
+
 
 .text-card-sec:hover {
   transform: translateY(-5px);
@@ -1428,16 +1441,17 @@ button {
   margin-bottom: 15px;
 }
 
+
 /* --- Text Styling --- */
 .text-card-sec h3 {
   font-size: 22px;
   margin-bottom: 10px;
-  color: #00308F;
+  color: var(--blue);
 }
 
 .text-card-sec p {
   font-size: 16px;
-  color: #333;
+  color: var(--blue);
   line-height: 1.5;
 }
 
@@ -1472,7 +1486,7 @@ button {
 .textCardSwiper .swiper-button-next::after,
 .textCardSwiper .swiper-button-prev::after {
   font-size: 24px;
-  color: #00308F;
+  color: var(--blue);
 }
 
 /* --- Pagination Styling --- */
@@ -1481,7 +1495,7 @@ button {
 }
 
 .textCardSwiper-pagination .swiper-pagination-bullet {
-  background: #00308F !important;
+  background: black !important;
   width: 12px;
   height: 12px;
   opacity: 0.6;

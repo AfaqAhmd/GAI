@@ -54,13 +54,13 @@ p, ul {
   background-size: cover;
   position: relative;
 }
-.cont-banner2 {
-  padding: 2vw 15vw;
-  color: white;
-  width: 85vw;
-  margin-top: 20vh;
-  position: absolute;
-  z-index: 1;
+
+.upper-section3 {
+  height: 90vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* ---------------- */

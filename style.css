@@ -1388,103 +1388,109 @@ button {
 
 /* --- text-card-section   home page --- -- */
 
-.text-card-section {
-  background: #00308F url("images/pattern.png"); /* Blue color + Background image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Ensure full height */
-  position: relative; /* Ensure arrows stay inside */
-  gap: 20px;
+.textCardSwiper .swiper-slide {
+  width: 100% !important; /* Forces only 1 slide at a time */
 }
-/* --- Swiper Styling --- */
+
+/* --- Swiper Container --- */
 .textCardSwiper {
   width: 85%;
-  height: 100%;
   padding: 20px 0;
-  background: transparent !important; /* Ensure no unwanted background */
-  position: relative; /* Ensure arrows are inside */
+  background: transparent !important;
+  position: relative;
 }
-/* --- Swiper Slide Settings --- */
-.swiper-slide2 {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-/* --- Text Card Styling --- */
+
+/* --- Swiper Slide --- */
+
+/* --- Card Styling --- */
 .text-card-sec {
   background: #fff;
   padding: 25px;
-  border-radius: 20px; /* More rounded corners */
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow for better visibility */
+  border-radius: 20px !important;
+  /* box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); */
   text-align: center;
   width: 100%;
-  max-width: 400px; /* Slightly wider cards */
+  max-width: 400px;
   transition: transform 0.3s ease-in-out;
+  margin: auto;
 }
 
-/* --- Image inside Card --- */
+.text-card-sec:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Image Styling --- */
 .text-card-sec img {
   width: 100%;
   height: auto;
   max-width: 350px;
-  border-radius: 10px; /* Slight rounding on images */
+  border-radius: 10px;
   margin-bottom: 15px;
 }
-/* --- Card Heading --- */
+
+/* --- Text Styling --- */
 .text-card-sec h3 {
   font-size: 22px;
   margin-bottom: 10px;
-  color: #00308F; /* Blue heading */
+  color: #00308F;
 }
-/* --- Card Text --- */
+
 .text-card-sec p {
   font-size: 16px;
   color: #333;
   line-height: 1.5;
 }
-/* --- Swiper Navigation Arrows (Fix for Not Showing) --- */
+
+/* --- Swiper Navigation Buttons --- */
 .textCardSwiper .swiper-button-next,
 .textCardSwiper .swiper-button-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.9); /* Light background for visibility */
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 9999 !important; /* Ensure arrows are on top */
+  z-index: 10;
   display: flex !important;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   opacity: 1 !important;
-  visibility: visible !important;
 }
-/* --- Left Arrow (Previous) --- */
+
 .textCardSwiper .swiper-button-prev {
-  left: -90px; /* Move further outside */
+  left: -70px;
 }
-/* --- Right Arrow (Next) --- */
+
 .textCardSwiper .swiper-button-next {
-  right: -90px; /* Move further outside */
+  right: -70px;
 }
-/* --- Icon Size Increase --- */
+
+/* --- Icon Size --- */
 .textCardSwiper .swiper-button-next::after,
 .textCardSwiper .swiper-button-prev::after {
   font-size: 24px;
-  color: #00308F; /* Blue color */
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  color: #00308F;
+}
+
+/* --- Pagination Styling --- */
+.textCardSwiper-pagination {
+  margin-top: 20px;
+}
+
+.textCardSwiper-pagination .swiper-pagination-bullet {
+  background: #00308F !important;
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.textCardSwiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 

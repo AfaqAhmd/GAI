@@ -366,64 +366,58 @@
               <!-- ------------- -->
 
               <section class="text-card-section">
-                  <div class="swiper2 textCardSwiper">
-                    <div class="swiper-wrapper">
-                     
-                      <div class="swiper-slide2">
-                        <div class="text-card-sec">
-                          <img src="images/text-card02.png" alt="" />
-                          <h3>Volunteering for Impact</h3>
-                          <p>
-                            Our volunteering programs bring together passionate individuals committed to 
-                            making a difference. From organizing educational events to supporting healthcare 
-                            initiatives and disaster relief efforts, our volunteers are at the heart of what
-                             we do. Through their dedication, we create sustainable solutions and empower 
-                             communities to thrive. Join us and be part of a movement that inspires change
-                              and uplifts lives around the world.
-                          </p>
-                        </div>
+                <div class="swiper textCardSwiper"> 
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="text-card-sec">
+                        <img src="images/text-card02.png" alt="" />
+                        <h3>Volunteering for Impact</h3>
+                        <p>Our volunteering programs bring together passionate individuals committed to 
+                          making a difference. From organizing educational events to supporting healthcare 
+                          initiatives and disaster relief efforts, our volunteers are at the heart of what
+                           we do. Through their dedication, we create sustainable solutions and empower 
+                           communities to thrive. Join us and be part of a movement that inspires change
+                            and uplifts lives around the world.</p>
                       </div>
-
-                      <div class="swiper-slide2">
-                        <div class="text-card-sec">
-                          <img src="images/text-card01.png" alt="" />
-                          <h3>Interest-Free Educational Loans</h3>
-                          <p>
-                            We believe financial barriers should never stand in the way of education.
-                                 Our interest-free educational loan program provides students from underserved
-                                  communities with the resources they need to pursue their academic goals.
-                                   By removing the burden of high-interest loans, we empower students to focus
-                                    on learning and building their futures. This initiative ensures that dreams
-                                     of higher education are achievable, fostering a generation of empowered individuals
-                                      ready to create lasting change.
-                          </p>
-                        </div>
-                      </div>
-                     
-                      <div class="swiper-slide2">
-                        <div class="text-card-sec">
-                          <img src="images/text-card03.png" alt="" />
-                          <h3>Healthcare for All</h3>
-                          <p>
-                            Access to quality healthcare is a fundamental right, not a privilege.
-                             Our healthcare programs include organizing medical camps, establishing 
-                             clinics, and offering interest-free medical loans. We address urgent medical
-                              needs while promoting long-term health and well-being. By delivering 
-                              lifesaving care and essential resources to vulnerable populations, we
-                               strive to create healthier, stronger communities globally.
-                          </p>
-                        </div>
-                      </div>
-                      
-                    
-                      
                     </div>
-                    <!-- Navigation Arrows -->
-                    <div class="swiper-button-next textCardSwiper-next"></div>
-                    <div class="swiper-button-prev textCardSwiper-prev"></div>
-                    <div class="swiper-pagination textCardSwiper-pagination"></div>
+                    <div class="swiper-slide">
+                      <div class="text-card-sec">
+                        <img src="images/text-card01.png" alt="" />
+                        <h3>Interest-Free Educational Loans</h3>
+                        <p>We believe financial barriers should never stand in the way of education.
+                          Our interest-free educational loan program provides students from underserved
+                           communities with the resources they need to pursue their academic goals.
+                            By removing the burden of high-interest loans, we empower students to focus
+                             on learning and building their futures. This initiative ensures that dreams
+                              of higher education are achievable, fostering a generation of empowered individuals
+                               ready to create lasting change.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="text-card-sec">
+                        <img src="images/text-card03.png" alt="" />
+                        <h3>Healthcare for All</h3>
+                        <p>Access to quality healthcare is a fundamental right, not a privilege.
+                          Our healthcare programs include organizing medical camps, establishing 
+                          clinics, and offering interest-free medical loans. We address urgent medical
+                           needs while promoting long-term health and well-being. By delivering 
+                           lifesaving care and essential resources to vulnerable populations, we
+                            strive to create healthier, stronger communities globally.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="text-card-sec">
+                        <img src="images/text-card04.png" alt="" />
+                        <h3>Scholarships for a Brighter Tomorrow</h3>
+                        <p>Education is the key to a better future, and our scholarship programs ensure it’s within everyone’s reach. We provide scholarships to talented and deserving students, enabling them to achieve academic excellence regardless of financial constraints. This program focuses on nurturing potential and creating opportunities for individuals to rise above their circumstances and contribute to their communities.</p>
+                      </div>
+                    </div>
                   </div>
-               
+                  <!-- Navigation Arrows -->
+                  <div class="swiper-button-next textCardSwiper-next"></div>
+                  <div class="swiper-button-prev textCardSwiper-prev"></div>
+                  <div class="swiper-pagination textCardSwiper-pagination"></div>
+                </div>
               </section>
 
 
@@ -587,35 +581,39 @@
         },
       });
     </script>
+
+
  
 
  <script>
-  var swiper2 = new Swiper(".textCardSwiper", {
-   slidesPerView: 3,
-   spaceBetween: 25, /* Slightly increased space for better design */
-   loop: true,
-   autoplay: {
-     delay: 5000, // 5 seconds
-     disableOnInteraction: false,
-   },
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-   },
-   speed: 700, /* Smooth sliding effect */
-   slidesPerGroup: 1, /* Only one slide at a time */
-   on: {
-     init: function () {
-       document.querySelector(".swiper-button-next").style.display = "flex";
-       document.querySelector(".swiper-button-prev").style.display = "flex";
-     }
-   }
- });
- </script>
+document.addEventListener("DOMContentLoaded", function () {
+  let textSwiper = document.querySelector(".textCardSwiper");
+
+  if (textSwiper) {
+    new Swiper(textSwiper, {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      loop: false,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".textCardSwiper-next",
+        prevEl: ".textCardSwiper-prev",
+      },
+      pagination: {
+        el: ".textCardSwiper-pagination",
+        clickable: true,
+      },
+      speed: 700,
+      slidesPerGroup: 1,
+    });
+  } else {
+    console.warn("Swiper container (.textCardSwiper) not found!");
+  }
+});
+</script>
 
   </body>
 </html>

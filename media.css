@@ -213,7 +213,7 @@
 /* ----------text-card-section---- */
 
 .text-card-section {
-display: none;
+ flex-direction: column;
 }
 
 

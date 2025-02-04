@@ -1597,6 +1597,40 @@ project-page
 donation
 ---------------- */
 
+.currency-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.donation-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.donation-btn:hover {
+  border: 2px solid #00308F;
+  color: #00308F;
+}
+
+/* Active button effect */
+.donation-btn.active {
+  background: #00308F;
+  color: white;
+  border-color: #00308F;
+}
+
+
 .donation-box {
   margin-top: 50px;
   display: flex;

@@ -6,6 +6,7 @@
   --blue: #00308f;
 }
 
+
 html, body{
   overflow-x: hidden;
 }
@@ -18,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Apply Arial to paragraphs */
 p, ul {
   font-family: "Geometric 415 Black BT", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* General reset */
@@ -291,7 +292,7 @@ nav a {
 }
 
 .one-big-img-head h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--blue);
 }
 
@@ -334,19 +335,18 @@ nav a {
   /* margin-top: 15vh; */
 }
 .who-right h2{
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 800;
 }
 .who-right ul{
   padding-left: 25px;;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 30px;
   line-height: 1.5;
 }
 
 .who-right p{
-  font-size: 22px;
   line-height: 1.5;
 }
 
@@ -377,18 +377,17 @@ nav a {
   max-width: 600px;
 }
 .our-approach h2{
-  font-size: 3.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 5vh;
   font-weight: 800;
 }
 .our-approach p{
-  font-size: 20px;
   line-height: 1.5;
 }
 
 .our-approach ul{
-  font-size: 22px;
+  /* font-size: 22px; */
   line-height: 1.7;
   padding: 25px;
 }
@@ -417,7 +416,7 @@ nav a {
 }
 
 .program-title {
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: bold;
   color: transparent;
   color: var(--blue);
@@ -649,7 +648,7 @@ button {
 }
 
 .donationsecond-title {
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: 700;
   color: #00308F;
   margin-bottom: 20px;
@@ -669,13 +668,6 @@ button {
 
 }
 
-.donationsecond-title {
-  font-size: 60px;
-  font-weight: 700;
-  /* color: #00308F; */
-  margin-bottom: 20px;
-  color: linear-gradient(to right, #00308F, #1584DA) !important;
-}
 
 .donationsecond-grid {
   display: grid;
@@ -1225,7 +1217,7 @@ button {
     text-align: center;
 }
 .project-head h2{
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .project-cardd {
   width: 50%;
@@ -1338,7 +1330,7 @@ button {
   text-align: center;
 }
 .doctors-content h2{
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .statistics{
   width: 45%;
@@ -1525,7 +1517,7 @@ project-page
   color: white;
 }
 .app-process-head h2{
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .app-process-container{
   margin-top: 30px;
@@ -1659,7 +1651,7 @@ donation
 
 .donation-content h2 {
   color: #00308F;
-  font-size: 25px;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 .donation-content p {
@@ -1737,10 +1729,10 @@ margin-top: 20px;
 }
 
 .region-text h2{
-  font-size: 3.5rem;
+  font-size: 2rem;
   color: var(--blue);
 }
 
 .region-text p{
-  font-size: 20px;
+  /* font-size: 20px; */
 }

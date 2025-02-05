@@ -163,13 +163,14 @@
             <option>Volunteer Funding</option>
             <option>Gifts & Donation</option>
           </select>
-          <select>
+          <select id="amountSelect">
             <option>Select</option>
             <option>100</option>
             <option>200</option>
             <option>300</option>
-            <option>Any Amount</option>
+            <option value="custom">Any Amount</option>
           </select>
+          <input type="number" id="customAmount" placeholder="Enter amount" style="display: none;"/>
           <button>Donate Fast</button>
         </div>
         <label>
@@ -260,6 +261,9 @@
            Through ethical fundraising practices, GAI continues to empower underserved communities globally by providing access to interest-free loans,
             scholarships, and essential humanitarian aid.</p>
      </div>
+
+
+     <script src="script.js"></script>
 
 </body>
 

@@ -472,13 +472,14 @@
             <option>Volunteer Funding</option>
             <option>Gifts & Donation</option>
           </select>
-          <select>
+          <select id="amountSelect">
             <option>Select</option>
             <option>100</option>
             <option>200</option>
             <option>300</option>
-            <option>Any Amount</option>
+            <option value="custom">Any Amount</option>
           </select>
+          <input type="number" id="customAmount" placeholder="Enter amount" style="display: none;"/>
           <button>Donate Fast</button>
         </div>
         <label>
@@ -630,39 +631,10 @@
 
  </script>
 
- <!-- <script>
-document.addEventListener("DOMContentLoaded", function () {
-  let textSwiper = document.querySelector(".textCardSwiper");
-
-  if (textSwiper) {
-    new Swiper(textSwiper, {
-      slidesPerView: 3,
-      spaceBetween: 25,
-      loop: false,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".textCardSwiper-next",
-        prevEl: ".textCardSwiper-prev",
-      },
-      pagination: {
-        el: ".textCardSwiper-pagination",
-        clickable: true,
-      },
-      speed: 700,
-      slidesPerGroup: 1,
-    });
-  } else {
-    console.warn("Swiper container (.textCardSwiper) not found!");
-  }
-});
-</script> -->
+ 
 
 
-
+<script src="script.js"></script>
 
   </body>
 </html>

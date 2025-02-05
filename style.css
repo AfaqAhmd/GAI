@@ -605,10 +605,21 @@ nav a {
 .content select option{
   color: black;
 }
+.content input{
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  font-size: 1em;
+  padding: 15px 25px;
+}
+
+.content input::palceholder{
+  color: white;
+}
 
 
 button {
-    padding: 10px 30px;
+    padding: 10px 15px;
     font-size: 1em;
     border: 1.5px solid white;
     /* border-radius: 5px; */

@@ -115,7 +115,7 @@
   justify-content: space-around;
   gap: 20px;
   padding: 0;
-  /* justify-content: center; */
+  justify-content: center;
 }
 .project-cardd {
   width: 100%;

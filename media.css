@@ -275,8 +275,9 @@
 
  .content .form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
   margin-bottom: 20px;
 }
 .content h2 {

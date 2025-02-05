@@ -111,8 +111,6 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
   gap: 20px;
   padding: 0;
   justify-content: center;

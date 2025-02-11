@@ -1332,6 +1332,10 @@ button {
   background-size: cover;
   color: white;
   background-color: rgba(255, 0, 0, 0.3);
+}
+.doctor-overlay{
+  height: 100%;
+  background-color: rgba(4 , 5, 6, 0.53); 
   padding-bottom: 20px;
 }
 .doctors-content{

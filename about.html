@@ -12,13 +12,37 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     
+        <!-- CSS for Styling -->
+<style>
+  #whatsapp-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+  }
+  #whatsapp-widget img {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+  }
+  #whatsapp-widget img:hover {
+      transform: scale(1.1);
+  }
+</style>
 
 </head>
 
 <body>
   <!-- whatsApp widget -->
-  <div class="elfsight-app-04b3d2b8-f4d3-4e48-a668-3ab5c6767e5e" data-elfsight-app-lazy></div>
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <!-- <div class="elfsight-app-04b3d2b8-f4d3-4e48-a668-3ab5c6767e5e" data-elfsight-app-lazy></div>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script> -->
+
+  <div id="whatsapp-widget">
+    <a href="https://wa.me/+447861675612" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+  </div>
 
 
   
